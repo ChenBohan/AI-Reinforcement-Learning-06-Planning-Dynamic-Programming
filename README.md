@@ -5,9 +5,9 @@ Lecture 3: Planning by Dynamic Programming by David Silver
   - Problem: evaluate a given policy π
   - Solution: iterative application of Bellman expectation backup
   - Using synchronous backups,
-   - At each iteration k + 1
-   - For all states s ∈ S
-   - Update vk+1(s) from vk (s0) where s0 is a successor state of s
+     - At each iteration k + 1
+     - For all states s ∈ S
+     - Update vk+1(s) from vk (s0) where s0 is a successor state of s
 
 - Policy Iteration (How to Improve a Policy)
    - Given a policy π
