@@ -24,3 +24,10 @@ Lecture 3: Planning by Dynamic Programming by David Silver
        - It therefore improves the value function, vπ0(s) ≥ vπ(s)
     
 - Value Iteration
+  - Problem: find optimal policy π
+  - Solution: iterative application of Bellman optimality backup
+  - If we know the solution to subproblems v∗(s0), Then solution v∗(s) can be found by one-step lookahead. The idea of value iteration is to apply these updates iteratively
+    - Using synchronous backups
+      - At each iteration k + 1
+      - For all states s ∈ S
+      - Update vk+1(s) from vk (s0)
