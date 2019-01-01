@@ -31,3 +31,27 @@ Lecture 3: Planning by Dynamic Programming by David Silver
       - At each iteration k + 1
       - For all states s ∈ S
       - Update vk+1(s) from vk (s0)
+
+- Synchronous Dynamic Programming
+  - all states are backed up in paralle
+  
+- Asynchronous Dynamic Programming
+  - backs up states individually, in any order
+  - Can significantly reduce computation
+  - Guaranteed to converge if all states continue to be selected
+  
+- Three simple ideas for asynchronous dynamic programming:
+  - In-place dynamic programming
+    - Synchronous value iteration stores two copies of value function
+    - In-place value iteration only stores one copy of value function
+  - Prioritised sweeping
+    - Use magnitude of Bellman error to guide state selection
+    - Backup the state with the largest remaining Bellman error
+    - Update Bellman error of affected states after each backup
+    - Requires knowledge of reverse dynamics (predecessor states)
+    - Can be implemented efficiently by maintaining a priority queue
+  - Real-time dynamic programming
+    - Idea: only states that are relevant to agent
+    - Use agent’s experience to guide the selection of states
+    - After each time-step St, At, Rt+1
+    - Backup the state St
