@@ -1,9 +1,9 @@
 # AI-Reinforcement-Learning-06-Planning-Dynamic-Programming
 Lecture 3: Planning by Dynamic Programming by David Silver
 
-https://www.bilibili.com/video/av32149008/?p=4
+[Website](http://www0.cs.ucl.ac.uk/staff/D.Silver/web/Teaching.html)
 
-http://www0.cs.ucl.ac.uk/staff/D.Silver/web/Teaching.html
+[Videos](https://www.bilibili.com/video/av32149008/?p=4)
 
 - Iterative Policy Evaluation
   - Problem: evaluate a given policy π
